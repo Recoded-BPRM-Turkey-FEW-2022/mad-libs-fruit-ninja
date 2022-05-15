@@ -42,14 +42,14 @@ function displayer(allWords){
 
   for(let i=0;i<allWords.length ;i++){
     if(!allWords[i].pos){
-      editP.innerHTML += `<input maxLength="20" type="text" value="" placeholder="${allWords[i].word}"id="input${i}"> `;
-      previewP.innerHTML += `<span class="color" id="preview${i}">_____</span>`;
+      editP.innerHTML += `<input class="inputBar" maxLength="20" type="text" value="" placeholder="${allWords[i].word}"id="input${i}"> `;
+      previewP.innerHTML += `<span class="color" id="preview${i}">........</span>`;
 
       editP.addEventListener("input",()=>{
         let previewItem = document.getElementById("preview"+i);
         let editInput = document.getElementById("input"+i);
         previewItem.innerHTML = editInput.value+" ";
-      });
+      })
     }else if(allWords[i].pos){
       editP.innerHTML += `${allWords[i].word} `;
       previewP.innerHTML += `${allWords[i].word} `;
@@ -60,9 +60,3 @@ function displayer(allWords){
 getRawStory().then(parseStory).then((processedStory) => {
   displayer(processedStory);
 });
-/**
- * All your other JavaScript code goes here, inside the function. Don't worry about
- * the `then` and `async` syntax for now.
- * 
- * You'll want to use the results of parseStory() to display the story on the page.
- */
