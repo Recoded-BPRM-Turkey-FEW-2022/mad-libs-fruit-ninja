@@ -1,21 +1,3 @@
-/**
- * In your code, you are required (please read this carefully):
- * - to return a list of objects
- * - each object should definitely have a field, `word`
- * - each object should maybe have a field, `pos` (part of speech)
- * 
- * So for example, the return value of this for the example story.txt
- * will be an object that looks like so (note the comma! periods should
- * be handled in the same way).
- * Input: "Louis[n] went[v] to the store[n], and it was fun[a]."
- * Output: [
- *  { word: "Louis", pos: "noun" },
- *  { word: "went", pos: "verb", },
- *  { word: "to", },
- *  { word: "the", },
- *  { word: "store", pos: "noun" }
- *  { word: "," }
- */
 function parseStory(rawStory) {
   let allWords = [];
   //we will push our objects into this array later on.
@@ -61,7 +43,7 @@ function displayer(allWords){
   for(let i=0;i<allWords.length ;i++){
     if(!allWords[i].pos){
       editP.innerHTML += `<input maxLength="20" type="text" value="" placeholder="${allWords[i].word}"id="input${i}"> `;
-      previewP.innerHTML += `<span id="preview${i}">_____</span>`;
+      previewP.innerHTML += `<span class="color" id="preview${i}">_____</span>`;
 
       editP.addEventListener("input",()=>{
         let previewItem = document.getElementById("preview"+i);
