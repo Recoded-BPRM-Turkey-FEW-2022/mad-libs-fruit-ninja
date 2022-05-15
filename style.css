@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+.box{
+    padding: 20px;
+}
 .madLibsEdit{
     border: 1px orange solid;
     height: 300px;

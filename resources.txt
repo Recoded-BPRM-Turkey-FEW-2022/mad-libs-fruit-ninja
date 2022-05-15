@@ -3,3 +3,5 @@ https://www.digitalocean.com/community/tutorials/how-to-index-split-and-manipula
 For Of Loop
 https://www.w3schools.com/js/js_loop_for.asp
 
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
+

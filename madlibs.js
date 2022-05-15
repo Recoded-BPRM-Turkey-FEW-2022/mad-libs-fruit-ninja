@@ -57,37 +57,22 @@ function parseStory(rawStory) {
 function displayer(allWords){
   let previewP = document.querySelector(".previewP");
   let editP = document.querySelector(".editP");
-  let userInput = document.createElement("input");
-  userInput.setAttribute("type","text");
 
   for(let i=0;i<allWords.length ;i++){
     if(!allWords[i].pos){
-      editP.innerHTML += `<input placeholder="${allWords[i].word}"id="input${i}">`;
+      editP.innerHTML += `<input maxLength="20" type="text" value="" placeholder="${allWords[i].word}"id="input${i}"> `;
+      previewP.innerHTML += `<span id="preview${i}">_____</span>`;
+
+      editP.addEventListener("input",()=>{
+        let previewItem = document.getElementById("preview"+i);
+        let editInput = document.getElementById("input"+i);
+        previewItem.innerHTML = editInput.value+" ";
+      });
     }else if(allWords[i].pos){
-      editP.innerHTML += `<span id="span${i}">${allWords[i].word} </span>`
+      editP.innerHTML += `${allWords[i].word} `;
+      previewP.innerHTML += `${allWords[i].word} `;
     }
   }
-  for(let i=0;i<allWords.length ;i++){
-    if(!allWords[i].pos){
-      previewP.innerHTML += `______`;
-    }else if(allWords[i].pos){
-      previewP.innerHTML += `<span id="span${i}">${allWords[i].word} </span>`
-    }
-  }
-  // allWords.forEach(obj => {
-  //   if(!obj.pos){
-  //     editP.innerHTML += obj.word+(" ");
-  //   }else{
-  //     editP.append(userInput);
-  //   }
-  // });
-  // allWords.forEach(obj => {
-  //   if(!obj.pos){
-  //     previewP.innerHTML += obj.word+(" ")
-  //   }else{
-  //     previewP.innerHTML += "_____";
-  //   }
-  // });
 }
 
 getRawStory().then(parseStory).then((processedStory) => {
