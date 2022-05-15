@@ -1,3 +1,19 @@
-/**
- * Your CSS goes here.
- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.madLibsEdit{
+    border: 1px orange solid;
+    height: 300px;
+}
+.madLibsPreview{
+    margin-top: 20px;
+    border: 1px rgb(0, 115, 255) solid;
+    height: 300px;
+}
+header{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}

@@ -1,0 +1,5 @@
+https://www.digitalocean.com/community/tutorials/how-to-index-split-and-manipulate-strings-in-javascript
+
+For Of Loop
+https://www.w3schools.com/js/js_loop_for.asp
+
