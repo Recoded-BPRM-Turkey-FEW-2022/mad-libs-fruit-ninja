@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Louis[n] went to Mars last Saturday . When he landed on the planet he saw an alien[n] . Louis[n] waved[v] at the fuzzy[v] alien[n] but alien[n] started dancing[v] out of nowhere . But Louis[n] was shocked[a] to see this . Then they both started dancing[v] . It was an fun[a] trip for them .
+=======
+Louis[n] went to Mars last Saturday . When he landed on the planet he saw an alien[n] . Louis[n] waved[v] at the fuzzy[v] alien[n] but alien[n] started dancing[v] out of nowhere . But Louis[n] was shocked[a] to see this . Then they both started dancing[v] . It was a fun[a] trip for them .
+>>>>>>> 23f4d8a84283432fba76b1d8e27b9e2dacd1f515
