@@ -4,7 +4,7 @@ function parseStory(rawStory) {
   const adj = [/\[a\]/,"adj"];
   const noun = [/\[n\]/,"noun"];
   const verb = [/\[v\]/,"verb"];
-  const punc = /[,.“”"':!?]/g; 
+  const punc = /[,.“”"':!?]/g;
   //I made them an array , first one is our regex the second is the name of it.
   // Im gonna use them with their indexes to create a custom object pusher function.
   //used regex to not write that ugly thing over and over again :D now its just a cute letter.
@@ -63,6 +63,6 @@ getRawStory().then(parseStory).then((processedStory) => {
 /**
  * All your other JavaScript code goes here, inside the function. Don't worry about
  * the `then` and `async` syntax for now.
- * 
+ *
  * You'll want to use the results of parseStory() to display the story on the page.
  */
