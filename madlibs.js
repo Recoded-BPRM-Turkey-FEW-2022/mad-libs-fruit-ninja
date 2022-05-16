@@ -59,7 +59,6 @@ function displayer(allWords){
 
 getRawStory().then(parseStory).then((processedStory) => {
   displayer(processedStory);
-
 const input = document.getElementsByClassName('inputBar');
   for(let i = 0; i < input.length; i++){ // Adding an eventListener for when Enter is pressed.
     input[i].addEventListener('keypress', (e) => {
