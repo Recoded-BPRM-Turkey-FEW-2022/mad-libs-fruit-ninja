@@ -41,7 +41,7 @@ function displayer(allWords){
   let editP = document.querySelector(".editP");
 
   for(let i=0;i<allWords.length ;i++){
-    if(!allWords[i].pos){
+    if(allWords[i].pos){
       editP.innerHTML += `<input class="inputBar" maxLength="20" type="text" value="" placeholder="${allWords[i].word}"id="input${i}"> `;
       previewP.innerHTML += `<span class="color" id="preview${i}">........</span>`;
 
@@ -50,7 +50,7 @@ function displayer(allWords){
         let editInput = document.getElementById("input"+i);
         previewItem.innerHTML = editInput.value+" ";
       })
-    }else if(allWords[i].pos){
+    }else if(!allWords[i].pos){
       editP.innerHTML += `${allWords[i].word} `;
       previewP.innerHTML += `${allWords[i].word} `;
     }
