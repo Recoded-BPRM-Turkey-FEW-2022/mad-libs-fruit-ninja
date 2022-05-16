@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b641372e-76f5-489b-8951-76e680afb9b8/deploy-status)](https://app.netlify.com/sites/madlibs-selin-beyza/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b641372e-76f5-489b-8951-76e680afb9b8/deploy-status)](https://madlibs-selin-beyza.netlify.app)
 
 # Re:Coded Mad Libz
 
